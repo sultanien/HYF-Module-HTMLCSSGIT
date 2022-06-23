@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    padding;0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fff
+}
+
+.bird{
+    background-color: #2BC3FF;
+    width: 800px;
+    height: 500px;
+    position:relative;
+    /*display: flex;*/
+}
+.head{
+    background-color: black;
+    width: 300px;
+    height: 300px;
+    bottom:0px;
+    left:220px;
+    border-radius: 28% 28% 0% 0%;
+    position:absolute;
+}
+.eye{
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    position:absolute;
+    top: 80px;
+    left:50%;
+    right:50%;
+
+}
+
+.beak{
+    width: 0;
+    height: 0;
+    position:absolute;
+    border:60px solid transparent;
+    border-left-color:#FFD946;
+    top: 275px;
+    left:520px;
+}

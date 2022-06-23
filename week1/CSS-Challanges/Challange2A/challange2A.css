@@ -1,0 +1,38 @@
+body{
+    background-color: #E2AC7F;
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: Trebuchet MS, sans-serif;
+}
+#wrap{
+    background-color:#F5F5DC ;
+    width:70%;
+    margin:0 auto;
+    border: 5px dashed black;
+    text-align: center;
+}
+
+ul{
+    text-align: center;
+    list-style-type: none;
+    font-style: italic;  
+}
+li::first-letter{
+    font-size: 150%;
+}
+div + p{
+    text-align: justify;
+}
+h1{
+    font-style: italic;
+    margin:0;
+    border-bottom: 5px dashed black;
+    font-family: Arial black;
+}
+.copyright{
+    font-style: italic;  
+}
+.line{
+    margin:0 10px;
+}

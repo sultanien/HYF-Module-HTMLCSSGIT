@@ -1,0 +1,16 @@
+body {
+    background-color:#5b7fbd;
+    padding:0px 40px;
+    margin:40px auto;
+    font-family: arial, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  ul{
+    text-align:center;
+    list-style-position:inside;
+  }
+  .copyright{
+    font-size:small;
+    font-style: italic;
+  }
