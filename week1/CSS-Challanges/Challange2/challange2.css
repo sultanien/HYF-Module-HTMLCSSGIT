@@ -1,0 +1,19 @@
+body{
+    box-sizing: border-box;
+    background-color: black;
+    font-family: Palatino, URW Palladio L, serif;
+}
+#wrap{
+    background-color:lightskyblue ;
+    width:80%;
+    margin:0 auto;
+    padding: 5px 20px;
+}
+
+ul{
+    text-align: center;
+    list-style-type: none;
+}
+li::first-letter{
+    font-size: 150%;
+}

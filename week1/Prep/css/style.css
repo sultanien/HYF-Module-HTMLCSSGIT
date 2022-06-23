@@ -1,0 +1,16 @@
+body{
+    background-color: #f4f4f4;
+    color: #555555;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    margin: 0;
+}
+h1{
+    color:green;
+}
+.box-1{
+    background-color: #333333;
+    color: #fff;
+    
+
+}
