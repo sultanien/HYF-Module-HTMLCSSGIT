@@ -1,0 +1,158 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    width: 85%;
+    margin: 0 auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+}
+h2{
+    padding: 10px 0px;
+    border-bottom:2px solid #fff;
+}
+ul{
+    padding-top: 20px;
+}
+/*This is for header organization*/
+header {
+    background-color:rgba(214,215,210,255);
+    width: 100%;
+    /*To vertically center items in header*/
+    display:table;
+    background-color: #6b6c69;
+    color: #fff;
+    padding: 20px 40px;
+    margin-bottom: 20px;
+    border-radius: 25px 25px 0px 0px;
+}
+    /*To vertically center items in header*/
+header div{
+    display: table-cell;
+    vertical-align: middle;
+}
+header h1{
+    font-size: 3rem;
+    border-bottom: #fff 2px solid;
+
+}
+header p{
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+.clearfix{
+    background-color:#fbfbfb;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+section, aside {
+    color:#40403f;
+    line-height: 1.5rem;
+}
+/*This is for section organization */
+
+.left-side{
+    width: 70%;
+    float: left;
+    padding:20px;
+}
+
+.left-side li {
+    height:100px;
+    margin-bottom: 20px;
+}
+.date{
+    float:left;
+    width: 30%;
+}
+.info{
+    width: 70%;
+    float:right;
+}
+
+/*This is for aside organization */
+
+aside{
+    background-color: #f3f3f2;
+    width: 30%;
+    float:right;
+    padding: 10px;
+    position: relative;
+}
+
+aside div{
+    margin-bottom:20px;
+}
+
+.img{
+    text-align: center;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    max-width: 175px;
+    max-height: 175px;
+    border-radius: 10%;
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
+}
+
+aside div h2{
+    font-size: 1.3rem;
+}
+
+aside div h3{
+    font-size: 1.2rem;
+}
+
+.personal-info{
+    line-height: 0.8cm;
+}
+
+.personal-info p{
+    font-size: 2.07vw;
+}
+/*to prevent overflow I used vw*/
+@media screen and (min-width: 750px) {
+    .personal-info p {
+       font-size: 17px;
+    }
+  }
+.span{
+    position:absolute;
+    right: 10%;
+    
+}
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #40403f;;
+    border-radius: 50%;
+    display: inline-block;
+  }
+aside .gris{
+    background-color: #bbb;
+  }
+.margin{
+    margin-top: 20px;
+}
+
+  /*footer section*/
+  footer {
+    background-color:rgba(214,215,210,255);
+    width: 100%;
+    background-color: #6b6c69;
+    color: #fff;
+    padding: 20px;
+    margin: 20px 0px;
+    border-radius: 0px 0px 25px 25px;
+    text-align: center;
+}
