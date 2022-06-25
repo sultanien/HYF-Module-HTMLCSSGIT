@@ -1,0 +1,109 @@
+/*General implements*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 90%;
+    margin:0 auto;
+}
+
+header{
+    text-align: center;
+    border:2px solid;
+    padding: 20px;
+    margin: 20px 0px;
+    text-transform: uppercase;
+
+}
+img{
+    width: 100%;
+}
+
+li{
+    list-style-type: none;
+}
+
+p{
+    text-align: justify;
+}
+
+h2{
+    margin: 20px 0px;
+    padding: 10px;
+    background-color: aquamarine;
+
+}
+h3{
+    text-align: center;
+    padding: 5px;
+}
+/*Flexbox implements for mobile because this is the basic layout*/
+.flexbox-list{
+    display:flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.flexbox-item{
+    border: 2px solid;
+    padding:20px;
+    margin-bottom: 20px;
+}
+/*Flexbox implements for tablets*/
+
+@media screen and (min-width:600px) and (max-width:1023px){
+    .flexbox-item{
+        width: 30%;
+    }
+    .flexbox-item:nth-child(1), .flexbox-item:nth-child(2){
+        width: 48%;
+    }
+}
+
+/*Flexbox implements for laptops*/
+
+@media screen and (min-width:1024px){
+    
+    .flexbox-item{
+        width: 23%;
+    }
+    .flexbox-item:nth-child(1){
+        width: 49.4%;
+    }
+}
+
+/*grid section*/
+
+.grid-list{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap:1em;
+}
+.grid-item{
+    grid-column: span 12;
+    border: 2px solid;
+    padding:20px;
+}
+
+    @media screen and (min-width:600px) and (max-width:1023px){
+        .grid-item{
+            grid-column: span 6;
+        }
+        .grid-item:nth-child(n+3){
+            grid-column: span 4;
+        }
+    }
+
+    @media screen and (min-width:1024px){
+
+        .grid-item{
+            grid-column: span 6;
+        }
+        .grid-item:nth-child(n+2){
+            grid-column: span 3;
+        }
+    }
