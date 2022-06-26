@@ -7,7 +7,7 @@ body{
     width: 85%;
     margin: 0 auto;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 17px;
+    font-size: 1rem;
 }
 h2{
     padding: 10px 0px;
@@ -21,19 +21,18 @@ header {
     background-color:rgba(214,215,210,255);
     width: 100%;
     /*To vertically center items in header*/
-    display:table;
+    display:flex;
+    align-items: center;
     background-color: #6b6c69;
     color: #fff;
     padding: 20px 40px;
-    margin-bottom: 20px;
+    /*margin added*/
+    margin: 40px 0px;
     border-radius: 25px 25px 0px 0px;
 }
-    /*To vertically center items in header*/
-header div{
-    display: table-cell;
-    vertical-align: middle;
-}
+
 header h1{
+    /*width: 100%;*/ /*Why does not width work here*/
     font-size: 3rem;
     border-bottom: #fff 2px solid;
 
@@ -60,7 +59,7 @@ section, aside {
 /*This is for section organization */
 
 .left-side{
-    width: 70%;
+    width: 68%;
     float: left;
     padding:20px;
 }
@@ -71,10 +70,10 @@ section, aside {
 }
 .date{
     float:left;
-    width: 30%;
+    width: 28%;
 }
 .info{
-    width: 70%;
+    width: 68%;
     float:right;
 }
 
@@ -82,7 +81,7 @@ section, aside {
 
 aside{
     background-color: #f3f3f2;
-    width: 30%;
+    width: 32%;
     float:right;
     padding: 10px;
     position: relative;
@@ -91,11 +90,9 @@ aside{
 aside div{
     margin-bottom:20px;
 }
-.img{
-    text-align: center;
-}
-
 img{
+    display: block;
+    margin: 0 auto;
     height: 50%;
     width: 50%;
     max-width: 175px;
@@ -108,28 +105,27 @@ aside div h2{
     font-size: 1.3rem;
 }
 
-aside div h3{
+.personal-info dt{
     font-size: 1.2rem;
 }
 
 .personal-info{
     line-height: 0.8cm;
 }
+.personal-info dt{
+    font-weight: bold;
+}
 
-.personal-info p{
+.personal-info dd{
     font-size: 2.05vw;
 }
 /*to prevent overflow I used vw*/
 @media screen and (min-width: 750px) {
-    .personal-info p {
+    .personal-info dd {
        font-size: 17px;
     }
   }
-.span{
-    position:absolute;
-    right: 10%;
-    
-}
+
 .dot {
     height: 10px;
     width: 10px;
@@ -151,7 +147,7 @@ aside .gris{
     background-color: #6b6c69;
     color: #fff;
     padding: 20px;
-    margin: 20px 0px;
+    margin: 40px 0px;
     border-radius: 0px 0px 25px 25px;
     text-align: center;
 }
