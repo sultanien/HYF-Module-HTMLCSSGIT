@@ -1,0 +1,3 @@
+[submodule "week2/Patreon-clone"]
+	path = week2/Patreon-clone
+	url = https://github.com/sultanien/Patreon-clone.git
