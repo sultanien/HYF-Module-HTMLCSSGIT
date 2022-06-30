@@ -1,3 +1,6 @@
 [submodule "week2/Patreon-clone"]
 	path = week2/Patreon-clone
 	url = https://github.com/sultanien/Patreon-clone.git
+[submodule "week2/favorite-cmd-commands"]
+	path = week2/favorite-cmd-commands
+	url = https://github.com/sultanien/favorite-cmd-commands.git
